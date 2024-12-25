@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "teleportationmod",
+	"version": "${version}",
+	"name": "TeleportationMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Hassan!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/teleportationmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.first.teleportation.TeleportationMod"
+		],
+		"client": [
+			"net.first.teleportation.TeleportationModClient"
+		],
+		"fabric-datagen": [
+			"net.first.teleportation.TeleportationModDataGenerator"
+		]
+	},
+	"mixins": [
+		"teleportationmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
